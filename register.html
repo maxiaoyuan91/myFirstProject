@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>个人注册</title>
+    <link type="text/css" rel="stylesheet" href="style/base.css"/>
+    <link type="text/css" rel="stylesheet" href="style/resiter.css"/>
+</head>
+<body>
+
+<div class="header">
+    <div class="c110">
+        <a href="register.html" class="resLogo"></a>
+        <div class="header_left">欢迎注册</div>
+        <div class="header_right">已有账号，<a href="#">请登录</a></div>
+    </div>
+</div>
+
+<div class="c110 container">
+    <div class="main clearfix">
+        <form id="register_form" method="" action="" class="resForm">
+            <div class="form_item">
+                <label>用 户 名</label>
+                <i class="icon"></i>
+                <input type="text" placeholder="您的账户名和登录名" maxlength="20"/>
+                <span class="i_def"><i></i>支持中文、字母、数字、“-”“_”的组合，4-20个字符</span>
+            </div>
+            <div class="form_item">
+                <label>设 置 密 码</label>
+                <i class="icon"></i>
+                <input id="password" type="password" placeholder="建议至少使用两种字符组合" maxlength="20"/>
+                <span class="i_def"><i></i>建议使用字母、数字和符号两种及以上的组合，6-20个字符</span>
+            </div>
+            <div class="form_item">
+                <label>确 认 密 码</label>
+                <i class="icon"></i>
+                <input type="password" placeholder="请再次输入密码" maxlength="20"/>
+                <span class="i_def"><i></i>请再次输入密码</span>
+            </div>
+            <div class="form_item">
+                <label>手 机 验 证</label>
+                <i class="icon"></i>
+                <input type="text" placeholder="建议使用常用手机" maxlength="11"/>
+                <span class="i_def"><i></i>完成验证后，可以使用该手机登录和找回密码</span>
+            </div>
+
+            <div class="form_item">
+                <label>邮 箱 验 证</label>
+                <i class="icon"></i>
+                <input type="text" placeholder="请再次输入密码"/>
+                <span class="i_def"><i></i>建议使用常用的邮箱</span>
+            </div>
+            <div class="form_item">
+                <label>手 机 验 证</label>
+                <i class="icon"></i>
+                <input type="text" value="" placeholder="建议使用常用手机"/>
+                <span class="i_def"><i></i>看不清？点击图片更换验证码</span>
+                <p id="codeDiv">dD45</p>
+            </div>
+            <input type="button" value="立即注册" class="res-btn"/>
+        </form>
+        <div class="regRight">
+            <div class="first"> 企业用户注册</div>
+            <div class="last">INTERNATIONAL<br/> CUSTOMERS</div>
+        </div>
+    </div>
+</div>
+<div class="footer w clearfix">
+    <div class="link">
+        <a href="javascript:;">关于我们</a>|<a href="javascript:;">联系我们</a>|<a href="javascript:;">商家入驻</a>|<a href="javascript:;">营销中心</a>|<a href="javascript:;">手机京东</a>|<a href="javascript:;">友情链接</a>|<a href="javascript:;">销售联盟</a>|<a href="javascript:;">京东社区</a>|<a href="javascript:;">京东公益</a>|<a href="javascript:;">English Site</a>|<a href="javascript:;">Contact Us</a>
+    </div><!--link end-->
+    <p>Copyright©2004-2016  京东JD.com 版权所有</p>
+</div>
+
+    <script>
+    var register = document.getElementById("register_form");
+    var oInput = register.getElementsByTagName("input");
+    function myFouse(curEle,str,preEle,nextEle,inParent){
+         if (oInput[curEle].value.length == 0) {
+            nextEle.className = "i_def showS";
+            nextEle.innerHTML = str;
+            inParent.className = "form_item";
+
+    }
+    }
+    function keyDown(curEle,str,preEle,nextEle,inParent){
+        preEle.className = "icon";
+        nextEle.className = "i_def showS";
+        nextEle.innerHTML =str;
+        inParent.className = "form_item";
+    }
+
+//    function keyDownPas(curEle,preEle,nextEle,inParent){
+//            var val = curEle.value.replace(/(^ +| +$)/g, "");
+//            if (curEle.value.length == 0) {
+//                nextEle.className = "i_def";
+//                nextEle.innerHTML = "<i></i> 完成验证后，你可以用该邮箱登录和找回密码";
+//                preEle.className = "icon";
+//            } else {
+//                if (/^.*([\W_])+.*$/i.test(val)) {
+//                    inParent.className = "form_item error";
+//                    nextEle.className = "i_def i_error"
+//                    nextEle.innerHTML = "<i></i> 有被盗风险,建议使用字母、数字和符号两种及以上组合";
+//                    preEle.className = "icon";
+//                    return;
+//                }
+//                preEle.className = "icon iconAll";
+//                nextEle.className = "i_def";
+//                inParent.className = "form_item";
+//            }
+//
+//
+//    }
+    for(var i=0;i<oInput.length;i++){
+        oInput[i].index=i;
+        oInput[i].str=oInput[i].nextElementSibling.innerHTML;
+        oInput[i].preEle =oInput[i].previousElementSibling;
+        oInput[i].nextEle =oInput[i].nextElementSibling;
+        oInput[i].inParent = oInput[i].parentNode;
+        oInput[i].onfocus=function(){
+            myFouse(this.index,this.str,this.preEle,this.nextEle,this.inParent);
+        };
+        oInput[i].onkeydown=function(){
+            keyDown(this.index,this.str,this.preEle,this.nextEle,this.inParent)
+        }
+    }
+
+
+    oInput[0].onblur = function () {
+        var preEle = this.previousElementSibling;
+        var nextEle = this.nextElementSibling;
+        var inParent = this.parentNode;
+        var val = this.value.replace(/(^ +| +$)/g, "");
+        var reg = /^[A-Za-z0-9_\-\u4e00-\u9fa5]+$/;
+        if (this.value.length == 0) {
+            nextEle.className = "i_def";
+            nextEle.innerHTML = "<i></i> 支持中文、字母、数字、“-”“_”的组合，4-20个字符";
+        } else {
+                inParent.className = "form_item error";
+                nextEle.className = "i_def i_error"
+                preEle.className = "icon";
+                if(this.value.length<4){
+                    nextEle.innerHTML="<i></i>长度只能在4-20个字符之间";
+                    return;
+                }else if(/^[0-9]+$/.test(val)){
+                    nextEle.innerHTML="<i></i>用户名不能是纯数字，请重新输入！";
+                    return;
+                }else{
+                    if(!reg.test(val)){
+                    nextEle.innerHTML = "<i></i> 格式错误，仅支持汉字、字母、数字、“-”“_”的组合";
+                    return;
+                    }
+                }
+                preEle.className = "icon iconAll";
+                nextEle.className = "i_def";
+                inParent.className = "form_item";
+        }
+    }
+
+    oInput[1].onblur = function () {
+        var preEle = this.previousElementSibling;
+        var nextEle = this.nextElementSibling;
+        var inParent = this.parentNode;
+        var val = this.value.replace(/(^ +| +$)/g, "");
+        if (this.value.length == 0) {
+            nextEle.className = "i_def";
+            nextEle.innerHTML = "<i></i> 支持中文、字母、数字、“-”“_”的组合，4-20个字符";
+        }else if(this.value.length>6){
+
+//                keyDownPas( oInput[1],preEle,nextEle,inParent)
+
+            if (/^.*([\W_])+.*$/i.test(val)) {
+                inParent.className = "form_item error";
+                nextEle.className = "i_def i_error"
+                nextEle.innerHTML = "<i></i> 有被盗风险,建议使用字母、数字和符号两种及以上组合";
+                preEle.className = "icon";
+                return;
+            }
+            preEle.className = "icon iconAll";
+            nextEle.className = "i_def";
+            inParent.className = "form_item";
+
+
+        }else{
+            inParent.className = "form_item error";
+            nextEle.className = "i_def i_error"
+            preEle.className = "icon";
+            nextEle.innerHTML ="<i></i>长度只能在6-20个字符之间";
+        }
+    }
+
+    oInput[2].onblur = function () {
+        var password=document.getElementById("password");
+        var preEle = this.previousElementSibling;
+        var nextEle = this.nextElementSibling;
+        var inParent = this.parentNode;
+        var curEleStr=password.value;
+        var val = this.value.replace(/(^ +| +$)/g, "");
+        //var reg = /^\w+((-\w+)|(\.\w+))*@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+        if (this.value.length == 0) {
+            nextEle.className = "i_def";
+            nextEle.innerHTML = "<i></i> 请再次输入密码";
+        } else {
+            if (val.toUpperCase()!=curEleStr.toUpperCase()) {
+                inParent.className = "form_item error";
+                nextEle.className = "i_def i_error"
+                nextEle.innerHTML = "<i></i> 密码不对，请重新输入";
+                preEle.className = "icon";
+                return;
+            }
+            preEle.className = "icon iconAll";
+            nextEle.className = "i_def";
+            inParent.className = "form_item";
+        }
+    }
+    oInput[3].onblur = function () {
+        var preEle = this.previousElementSibling;
+        var nextEle = this.nextElementSibling;
+        var inParent = this.parentNode;
+        var val = this.value.replace(/(^ +| +$)/g, "");
+        var reg =/^1\d{10}$/;
+        if (this.value.length == 0) {
+            nextEle.className = "i_def";
+            nextEle.innerHTML = "<i></i> 完成验证后，你可以用该邮箱登录和找回密码";
+        } else {
+            if (!reg.test(val)) {
+                inParent.className = "form_item error";
+                nextEle.className = "i_def i_error"
+                nextEle.innerHTML = "<i></i> 格式错误";
+                preEle.className = "icon";
+                return;
+            }
+            preEle.className = "icon iconAll";
+            nextEle.className = "i_def";
+            inParent.className = "form_item";
+        }
+    }
+
+
+    oInput[4].onblur = function () {
+        var preEle = this.previousElementSibling;
+        var nextEle = this.nextElementSibling;
+        var inParent = this.parentNode;
+        var val = this.value.replace(/(^ +| +$)/g, "");
+        var reg = /^\w+((-\w+)|(\.\w+))*@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+        if (this.value.length == 0) {
+            nextEle.className = "i_def";
+            nextEle.innerHTML = "<i></i> 完成验证后，你可以用该邮箱登录和找回密码";
+        } else {
+            if (!reg.test(val)) {
+                inParent.className = "form_item error";
+                nextEle.className = "i_def i_error"
+                nextEle.innerHTML = "<i></i> 格式错误";
+                preEle.className = "icon";
+                return;
+            }
+            preEle.className = "icon iconAll";
+            nextEle.className = "i_def";
+            inParent.className = "form_item";
+        }
+    }
+
+    oInput[5].onblur = function () {
+        var preEle = this.previousElementSibling;
+        var nextEle = this.nextElementSibling;
+        var inParent = this.parentNode;
+        var curEleStr=codeDiv.innerHTML;
+        var val = this.value.replace(/(^ +| +$)/g, "");
+        //var reg = /^\w+((-\w+)|(\.\w+))*@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+        if (this.value.length == 0) {
+            nextEle.className = "i_def";
+            nextEle.innerHTML = "<i></i> 看不清？点击图片更换验证码";
+        } else {
+            if (val.toUpperCase()!=curEleStr.toUpperCase()) {
+                inParent.className = "form_item error";
+                nextEle.className = "i_def i_error"
+                nextEle.innerHTML = "<i></i> 验证码不对，请重新输入";
+                preEle.className = "icon";
+                return;
+            }
+            preEle.className = "icon iconAll";
+            nextEle.className = "i_def";
+            inParent.className = "form_item";
+        }
+    }
+    //验证码
+    var codeDiv = document.getElementById("codeDiv");
+    var area = "abcdefghijklmnopqrstuvwxyz" +
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
+            "0123456789";
+    function getCode(flag) {
+        var str = "";
+        for (var i = 0; i < 4; i++) {
+            var ran = Math.round(Math.random() * 61);
+            str += area[ran];
+        }
+        codeDiv.innerHTML = str;
+        if(flag=="true"){
+        oInput[5].focus();
+        oInput[5].value="";
+        myFouse(5,"<i></i>看不清？点击图片更换验证码",oInput[5].previousElementSibling,oInput[5].nextElementSibling,oInput[5].parentNode)
+        }
+    }
+    getCode("false");
+    codeDiv.onclick =function(){
+        getCode("true");
+    }
+</script>
+</body>
+</html>

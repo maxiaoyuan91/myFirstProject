@@ -19,8 +19,8 @@
                         <span class="iconWrap-right"><em>◇</em></span>
                        送至：<span>上海</span>
                    </a>
-                    <div class="choseAdd">
-                        <a href="javascript:;">北京</a>
+                    <div class="topNav-menu addMenu">
+                        <a href="javascript:;" class="bg">北京</a>
                         <a href="javascript:;">上海</a>
                         <a href="javascript:;">天津</a>
                         <a href="javascript:;">重庆</a>
@@ -60,9 +60,36 @@
                 </li>
             </ul>
             <ul class="topNav-right">
-                <li><a class="bor0" href="javascript:;">你好，请登录</a><a class="red" href="javascript:;">免费注册</a></li>
+                <li><a class="bor0" href="javascript:;">你好，请登录</a><a class="red" href="register.html">免费注册</a></li>
                 <li><a href="javascript:;">我的订单</a></li>
-                <li class="topNavLi"><a class="iconWrap myJD" href="javascript:;"><span class="iconWrap-right"><em>◇</em></span>我的京东</a></li>
+                <li class="topNavLi">
+                    <a class="iconWrap myJD" href="javascript:;"><span class="iconWrap-right"><em>◇</em></span>我的京东</a>
+                    <div class="topNav-menu myJDMenu">
+                        <dl class="clearfix">
+                            <dt></dt>
+                            <dd>
+                                <a href="javascript:;">您好请登录</a>
+                                <p><a href="javascript:;" class="first">优惠券</a>|<a href="javascript:;" class="last">消息</a></p>
+                            </dd>
+                        </dl>
+                        <ul class="clearfix">
+                            <li><a href="javascript:;">待处理订单</a></li>
+                            <li><a href="javascript:;">咨询回复</a></li>
+                            <li><a href="javascript:;">降价商品</a></li>
+                            <li><a href="javascript:;">返修退换货</a></li>
+                            <li><a href="javascript:;">我的关注</a></li>
+                            <li><a href="javascript:;">我的京豆</a></li>
+                            <li><a href="javascript:;">我的理财</a></li>
+                            <li><a href="javascript:;">京东白条</a></li>
+                        </ul>
+                        <div class="title"><h2>我的足记</h2><a href="javascript:;">更多</a></div>
+                        <div class="mySee clear">
+                            <a href="javascript:;"><img src="images/myJd.jpg" alt=""/></a>
+                            <a href="javascript:;"><img src="images/myJd.jpg" alt=""/></a>
+                        </div>
+
+                    </div>
+                </li>
                 <li><a href="javascript:;">京东会员</a></li>
                 <li><a href="javascript:;">企业采购</a></li>
                 <li><a class="iconWrap appJD" href="javascript:;"><span class="iconWrap-left"></span><span class="iconWrap-right"><em>◇</em></span>手机京东</a></li>
@@ -106,85 +133,1378 @@
         <div class="w">
             <div class="nav-left">
                 <h2>全部商品分类</h2>
-                <ul class="menuWrap clearfix">
-                    <li>
-                        <h3>
-                            <a href="javascript:;">家用电器</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="javascript:;">手机</a>
-                            <a href="javascript:;">数码</a>
-                            <a href="javascript:;">京东通信</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="javascript:;">家用电器</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="javascript:;">家用电器</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="javascript:;">家用电器</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="javascript:;">家用电器</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="javascript:;">家用电器</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="javascript:;">家用电器</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="javascript:;">家用电器</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="javascript:;">家用电器</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="javascript:;">家用电器</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="javascript:;">家用电器</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="javascript:;">家用电器</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="javascript:;">家用电器</a>
-                        </h3>
-                    </li>
-                    <li>
-                        <h3>
-                            <a href="javascript:;">家用电器</a>
-                        </h3>
-                    </li>
-                </ul><!--menuWrap end-->
+
+                    <ul class="menuWrap" id="menuWrap">
+                        <li class="clearfix">
+                            <h3>
+                                <a href="javascript:;">家用电器</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">1玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="javascript:;">手机</a>
+                                <a href="javascript:;">数码</a>
+                                <a href="javascript:;">京东通信</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">2玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="javascript:;">家用电器</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">3玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="javascript:;">家用电器</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">4玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="javascript:;">家用电器</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">5玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="javascript:;">家用电器</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">6玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="javascript:;">家用电器</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">7玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="javascript:;">家用电器</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">8玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="javascript:;">家用电器</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">9玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="javascript:;">家用电器</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">10玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="javascript:;">家用电器</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">11玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="javascript:;">家用电器</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">12玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="javascript:;">家用电器</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">13玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="javascript:;">家用电器</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">14玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                        <li>
+                            <h3>
+                                <a href="javascript:;">家用电器</a>
+                            </h3>
+                            <div class="navMenu">
+                                <div class="navMenu-left">
+                                    <div class="special">
+                                        <a href="">15玩3C<span>&gt;</span></a>
+                                        <a href="">手机频道<span>&gt;</span></a>
+                                        <a href="">网上营业厅<span>&gt;</span></a>
+                                        <a href="">配件城<span>&gt;</span></a>
+                                        <a href="">影像<span>&gt;</span></a>
+                                        <a href="">以旧换新<span>&gt;</span></a>
+                                    </div>
+                                    <div class="menuClassfiy">
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机</a>
+                                                <a href="javascript:;">对讲机</a>
+                                                <a href="javascript:;">以旧换新</a>
+                                                <a href="javascript:;">手机维修</a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="clearfix">
+                                            <dt>手机通讯　&gt;</dt>
+                                            <dd class="clearfix">
+                                                <a href="javascript:;">手机电池</a>
+                                                <a href="javascript:;">移动电源</a>
+                                                <a href="javascript:;">蓝牙耳机</a>
+                                                <a href="javascript:;">充电器</a>
+                                                <a href="javascript:;">数据线</a>
+                                                <a href="javascript:;">手机耳机</a>
+                                                <a href="javascript:;">手机支架</a>
+                                                <a href="javascript:;">贴膜</a>
+                                                <a href="javascript:;">手机存储卡</a>
+                                                <a href="javascript:;">保护套</a>
+                                                <a href="javascript:;">车载配件</a>
+                                                <a href="javascript:;">苹果周边</a>
+                                                <a href="javascript:;">创意配件</a>
+                                                <a href="javascript:;">手机饰品</a>
+                                                <a href="javascript:;">拍照配件</a>
+                                            </dd>
+                                        </dl>
+                                    </div><!--menuClassfiy end-->
+                                </div><!--navMenu-left end-->
+                                <div class="navMenu-right">
+                                    <ul class="clearfix">
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                        <li><a href="javascript:;"><img src="images/menuimg.jpg" alt=""/></a></li>
+                                    </ul>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                    <a href="javascript:;"><img src="images/menuimgbig.jpg" alt=""/></a>
+                                </div><!--navMenu-right end-->
+                            </div><!--navMenu end-->
+                        </li>
+                    </ul><!--menuWrap end-->
+
+
             </div><!--nav-left end-->
             <ul class="nav-right">
                 <li><a href="javascript:;">服装城</a></li>
@@ -202,7 +1522,13 @@
     <!-----------------information--------------->
         <div class="information clearfix">
             <div class="info-left">
-                <img src="images/5721ed7fN9813fe04.jpg"/>
+                <div class="banner" id="banner">
+                    <div class="bannerInner"></div>
+                    <ul class="bannerTip"></ul>
+                    <a href="javascript:;" class="bannerLeft"></a>
+                    <a href="javascript:;" class="bannerRight"></a>
+                </div>
+                <!--<img src="images/5721ed7fN9813fe04.jpg"/>-->
             </div><!--banner end-->
             <div class="info-right">
                 <div class="news">
@@ -237,15 +1563,10 @@
         <!-----------------today--------------->
         <div class="todayRecom clearfix">
             <div class="todayShow"></div>
-            <div class="recomGoods">
-                <ul>
-                    <li><a href="javascript:;"><img src="images/today1.jpg"/> </a></li>
-                    <li><a href="javascript:;"><img src="images/today2.jpg"/></a></li>
-                    <li><a href="javascript:;"><img src="images/today3.jpg"/></a></li>
-                    <li><a href="javascript:;"><img src="images/today4.jpg"/></a></li>
-                </ul>
-                <a href="javascript:;" class="btnL"></a>
-                <a href="javascript:;" class="btnR"></a>
+            <div class="recomGoods" id="recomGoods">
+                <ul class="recomGoodsIn"></ul>
+                <a href="javascript:;" class="btnL" id="btnL"></a>
+                <a href="javascript:;" class="btnR" id="btnR"></a>
             </div>
         </div><!--today end-->
         <!-----------------goodsLike--------------->
@@ -301,7 +1622,7 @@
                         <div class="goddsPrice"><i>￥</i>38.90</div>
                     </div>
                 </li>
-                <li>
+                <li class="last">
                     <div class="goodsImg">
                         <a href="javascript;;"><img src="images/like/53987c4bNfc861cbc.jpg" alt=""/></a>
                     </div>
@@ -320,7 +1641,7 @@
             <div class="lifeWrap clearfix">
                 <div class="life1 back">
                     <h3>新发现</h3>
-                    <a href="javascript:;">
+                    <a href="javascript:;" class="lifemove">
                         <div class="goodsAlt">
                             <p class="tit">尚新品</p>
                             <p class="desc">新趋势</p>
@@ -366,7 +1687,7 @@
                 </div><!--life2 end-->
                 <div class="life1 back">
                     <h3>品牌街</h3>
-                    <a href="javascript:;">
+                    <a href="javascript:;" class="lifemove">
                         <div class="goodsAlt">
                             <p class="tit">尚新品</p>
                             <p class="desc">新趋势</p>
@@ -415,7 +1736,7 @@
             </div>
         </div><!--goodsLife end-->
         <div class="floor clearfix">
-            <div class="floor1 clearfix">
+            <div class="floor1 clearfix tabBox">
                 <h2><i>1F</i>服装鞋包</h2>
                 <div class="floor-left floor-left1">
                     <div class="floor-left1-top">
@@ -454,13 +1775,13 @@
                     <div><a href="javascript:;"><img src="images/yifu/572f5572Nb7b6803e.jpg"/> </a></div>
                 </div><!--floor-left end-->
                 <ul class="tab">
-                    <li class="select" style="width:58px;"><a href="javascript:;">大牌</a><span></span></li>
+                    <li class="select bg" style="width:58px;"><a href="javascript:;">大牌</a><span></span></li>
                     <li style="width:58px;"><a href="javascript:;" >男装</a><span></span></li>
                     <li style="width:82px;"><a href="javascript:;" >奢品礼品</a><span></span></li>
                     <li style="width:82px;"><a href="javascript:;" class="tab-lastLi" >奢华腕表</a></li>
                 </ul>
                 <div class="tabListWrap">
-                    <div class="tabList tabList1">
+                    <div class="tabList tabList1 tabListBg">
                         <ul class="tabList-left">
                             <li class="fore1"><a href="javascript:;"><img src="images/yifu/5731a0e5Nad263614.jpg" alt=""/></a></li>
 
@@ -737,7 +2058,7 @@
                     <li><a href="javascript:;"><img src="images/yifu/572c7917Nd61bd5f8.jpg" alt=""/></a></li>
                 </ul>
             </div><!--floor1 end-->
-            <div class="floor2 clearfix">
+            <div class="floor2 clearfix tabBox">
                 <h2><i>2F</i>个护美妆</h2>
                 <div class="floor-left2">
                     <div class="floor-left2-top">
@@ -767,12 +2088,12 @@
                     </div>
                 </div><!--floor-left end-->
                 <ul class="tab">
-                    <li class="select" style="width:58px;"><a href="javascript:;">热门</a><span></span></li>
+                    <li class="select bg" style="width:58px;"><a href="javascript:;">热门</a><span></span></li>
                     <li style="width:82px;"><a href="javascript:;" >国际大牌</a><span></span></li>
                     <li style="width:82px;"><a href="javascript:;" >国妆名牌</a></li>
                 </ul>
                 <div class="tabListWrap">
-                    <div class="tabList tabList3">
+                    <div class="tabList tabList3 tabListBg">
                         <div class="tabCarousel"></div>
                         <ul class="tabList-left">
                             <li class="fore1"><a href="javascript:;"><img src="images/yifu/5732ec76N6785a75c.png" alt=""/></a></li>
@@ -785,6 +2106,100 @@
                             <li class="fore4"><a href="javascript:;"><img src="images/yifu/5732b2a2Nb9812b59.jpg" alt=""/></a></li>
                         </ul>
                     </div><!--tabList1 end-->
+                    <div class="tabList tabList4">
+                        <ul class="tabList-top">
+                            <li>
+                                <div class="goodsImg">
+                                    <a href="javascript;;"><img src="images/yifu/572ac012N1f46fef0.jpg" alt=""/></a>
+                                </div>
+                                <div class="goodsInfo">
+                                    <a href="javascript:;">TOMMY HILFIGER 网眼珠地布短袖</a>
+                                    <div class="goddsPrice"><i>￥</i>440.00</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goodsImg">
+                                    <a href="javascript;;"><img src="images/yifu/572ac012N1f46fef0.jpg" alt=""/></a>
+                                </div>
+                                <div class="goodsInfo">
+                                    <a href="javascript:;">TOMMY HILFIGER 网眼珠地布短袖</a>
+                                    <div class="goddsPrice"><i>￥</i>440.00</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goodsImg">
+                                    <a href="javascript;;"><img src="images/yifu/572ac012N1f46fef0.jpg" alt=""/></a>
+                                </div>
+                                <div class="goodsInfo">
+                                    <a href="javascript:;">TOMMY HILFIGER 网眼珠地布短袖</a>
+                                    <div class="goddsPrice"><i>￥</i>440.00</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goodsImg">
+                                    <a href="javascript;;"><img src="images/yifu/572ac012N1f46fef0.jpg" alt=""/></a>
+                                </div>
+                                <div class="goodsInfo">
+                                    <a href="javascript:;">TOMMY HILFIGER 网眼珠地布短袖</a>
+                                    <div class="goddsPrice"><i>￥</i>440.00</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goodsImg">
+                                    <a href="javascript;;"><img src="images/yifu/572ac012N1f46fef0.jpg" alt=""/></a>
+                                </div>
+                                <div class="goodsInfo">
+                                    <a href="javascript:;">TOMMY HILFIGER 网眼珠地布短袖</a>
+                                    <div class="goddsPrice"><i>￥</i>440.00</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goodsImg">
+                                    <a href="javascript;;"><img src="images/yifu/572ac012N1f46fef0.jpg" alt=""/></a>
+                                </div>
+                                <div class="goodsInfo">
+                                    <a href="javascript:;">TOMMY HILFIGER 网眼珠地布短袖</a>
+                                    <div class="goddsPrice"><i>￥</i>440.00</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goodsImg">
+                                    <a href="javascript;;"><img src="images/yifu/572ac012N1f46fef0.jpg" alt=""/></a>
+                                </div>
+                                <div class="goodsInfo">
+                                    <a href="javascript:;">TOMMY HILFIGER 网眼珠地布短袖</a>
+                                    <div class="goddsPrice"><i>￥</i>440.00</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goodsImg">
+                                    <a href="javascript;;"><img src="images/yifu/572ac012N1f46fef0.jpg" alt=""/></a>
+                                </div>
+                                <div class="goodsInfo">
+                                    <a href="javascript:;">TOMMY HILFIGER 网眼珠地布短袖</a>
+                                    <div class="goddsPrice"><i>￥</i>440.00</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goodsImg">
+                                    <a href="javascript;;"><img src="images/yifu/572ac012N1f46fef0.jpg" alt=""/></a>
+                                </div>
+                                <div class="goodsInfo">
+                                    <a href="javascript:;">TOMMY HILFIGER 网眼珠地布短袖</a>
+                                    <div class="goddsPrice"><i>￥</i>440.00</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goodsImg">
+                                    <a href="javascript;;"><img src="images/yifu/572ac012N1f46fef0.jpg" alt=""/></a>
+                                </div>
+                                <div class="goodsInfo">
+                                    <a href="javascript:;">TOMMY HILFIGER 网眼珠地布短袖</a>
+                                    <div class="goddsPrice"><i>￥</i>440.00</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div><!--tabList4 end-->
                     <div class="tabList tabList4">
                         <ul class="tabList-top">
                             <li>
@@ -981,10 +2396,67 @@
            <a target="_blank" href="javascript:;"><img width="103" height="32" src="images/author6.jpg"/></a>
         </div><!--authentication end-->
     </div><!--footer end-->
+    <!-----------------toolbar--------------->
+    <div class="toolbar">
+        <div class="toolbarWrap">
+            <div class="toolbarIn">
+                <div class="toolTop">
+                    <div class="tool tool1">
+                        <i class="tab-tip bgImg"></i>
+                        <i class="tab-ico bgImg"></i>
+                        <em class="tab-text">京东会员</em>
+                    </div>
+                    <div class="tool tool2">
 
+                        <i class="tab-ico bgImg"></i>
+                        <em class="tab-text">购物车</em>
+                    </div>
+                    <div class="tool tool3">
+
+                        <i class="tab-ico bgImg"></i>
+                        <em class="tab-text">优惠券</em>
+                    </div>
+                    <div class="tool tool4">
+
+                        <i class="tab-ico bgImg"></i>
+                        <em class="tab-text">我的关注</em>
+                    </div>
+                    <div class="tool tool5">
+
+                        <i class="tab-ico bgImg"></i>
+                        <em class="tab-text">我的足迹</em>
+                    </div>
+                    <div class="tool tool6">
+
+                        <i class="tab-ico bgImg"></i>
+                        <em class="tab-text">我的消息</em>
+                    </div>
+                    <div class="tool tool7">
+
+                        <i class="tab-ico bgImg"></i>
+                        <em class="tab-text">咨询</em>
+                    </div>
+                </div>
+                <div class="toolFooter">
+
+                        <a href="javascript:;" class="tool tool8" id="goTop">
+                            <i class="tab-ico bgImg"></i>
+                            <em class="tab-text">顶部</em>
+                        </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div><!--wrap end-->
 <script charset="utf-8" type="text/javascript" src="js/utils.js"></script>
 <script charset="utf-8" type="text/javascript" src="js/index.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/tween.min.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/AutoBanner.js"></script>
+<script charset="utf-8" type="text/javascript" src="js/banner.js"></script>
+<script type="text/javascript">
+    var banner1 = new AutoBanner("banner", "json/banner.txt", 1000);
 
+</script>
 </body>
 </html>

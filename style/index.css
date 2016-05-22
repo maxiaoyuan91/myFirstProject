@@ -1,7 +1,94 @@
 .topBanner {width:100%; height:80px; background:#E80027;}
 /*information*/
 .information {padding:12px 0 0 210px;}
+/*banner start*/
 .info-left {float:left; width:730px; height:454px; padding:0 10px 10px 10px; }
+.banner {
+    position: relative;
+    margin: 0 auto;
+    width: 730px;
+    height: 454px;
+    overflow: hidden;
+}
+
+.banner .bannerInner {
+    width: 100%;
+    height: 100%;
+    background: url("../images/default.gif") no-repeat center center #e1e1e1;
+}
+
+.banner .bannerInner div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.banner .bannerInner img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+/*焦点区域的样式*/
+.banner .bannerTip {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10;
+    height: 18px;
+    overflow: hidden;
+}
+
+.banner .bannerTip li {
+    float: left;
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+    background: lightblue;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.banner .bannerTip li.bg {
+    background: red;
+}
+
+/*切换按钮区域的样式*/
+.banner a {
+    display: none;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    margin-top: -22.5px;
+    width: 30px;
+    height: 45px;
+    background-image: url("../images/pre.png");
+
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.banner a:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.banner a.bannerLeft {
+    left: 20px;
+    background-position: 0 0;
+}
+
+.banner a.bannerRight {
+    right: 20px;
+    background-position: -50px 0;
+}
+/*banner end*/
 .info-right {float: right;width:250px;}
 .news {width:248px; border:solid 1px #e4e4e4;}
 .news h2 {height:32px; line-height:32px; padding:0 15px; border-bottom:1px dotted #E8E8E7; font-size:16px; }
@@ -30,9 +117,64 @@
 .adPic {display:inline-block; width:250px; height:75px; margin:5px 0 0 0;}
 /*today*/
 .todayShow {float:left; width:210px; height:151px; background:url("../images/todayfalse.png") no-repeat left top;}
-.recomGoods {float:left;}
-.recomGoods li {float:left;width:250px; height:164px;}
+/*lunbo start*/
+.recomGoods {float:left; position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    height: 164px;
+    overflow: hidden;}
+.recomGoods .recomGoodsIn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000px; /*在JS数据绑定结束后根据请求回来数据的多少在动态调整我们的宽度*/
+    height:164px;
+}
 
+.recomGoods .recomGoodsIn li {
+    float: left;
+    width: 249px;
+    height:164px;
+    overflow: hidden;
+    margin-right: 1px;
+    background: url("../images/default.gif") no-repeat center center #e1e1e1;
+}
+
+.recomGoods .recomGoodsIn img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.recomGoods>a {
+    /*display: none;*/
+    position: absolute;
+    top: 50%;
+    margin-top: -22.5px;
+    width: 30px;
+    height: 45px;
+    background-image: url("../images/pre.png");
+
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.recomGoods>a:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.recomGoods a.btnL {
+    left: 20px;
+    background-position: 0 0;
+}
+
+.recomGoods a.btnR {
+    right: 20px;
+    background-position: -45px 0;
+}
+/*lunbo end*/
 .homebg {background: url("../images/homebg.png") -310px -5px no-repeat;)}
 .back {background:#f7f7f7;}
 .tit { font-weight: 700;font-size: 16px; margin-bottom: 12px;}
@@ -50,7 +192,9 @@
 .goodsImg img {width:130px; height:130px; margin:0 auto;}
 .goodsInfo {padding:0 36px; overflow:hidden;}
 .goodsInfo a {display:block; height:35px;overflow:hidden;}
-.goddsPrice { color: #b51d1a; font-size: 18px; font-weight:600;}
+.goodsLike .goddsPrice { color: #b51d1a; font-size: 18px;}
+.goodsLike .goodsInfo {border-right:1px solid #e6e6e6;}
+.goodsLike .last .goodsInfo {border:0;}
 /*life*/
 .lifeWrap {border: 1px solid #e0e0e0;}
 .lifeWrap>div {float:left;}
@@ -60,6 +204,9 @@
 .life-a2 .goodsAlt {top:48px;}
 .life1 { width:403px;border-right:1px solid #ededed; overflow:hidden;}
 .life1>a {border-bottom:1px solid #ededed;}
+.lifemove img {margin-left:0; -webkit-transition: all .5s;}
+.lifemove:hover img {margin-left:-8px;transition: all .5s;-webkit-transition: all .5s;}
+
 .life1 .goodsAlt {left:45px;}
 .life1-small {float:left; width:200px; height:158px;border-right: 1px solid #e0e0e0;}
 .life1-small2 {border:0;}
@@ -162,17 +309,17 @@
 .tab li {position:relative;float:left;display:block;height: 34px;}
 .tab li a {position:absolute; display:inline-block; float:left; height:31px; line-height: 31px; padding:0 16px; border-top:solid 3px #fff; border-left:solid 1px #fff; border-right:solid 1px #fff;}
 .tab li span {position: absolute;top: 10px;right:0px; display:inline-block; width:1px;height: 14px; background: #ccc;overflow: hidden;}
-.tab li:hover a {top:-1px; left:-1px;height:32px; padding:0 17px 0 16px; border-top:solid 3px #c81623; border-left:solid 1px #c81623; border-right:solid 1px #c81623; border-bottom:1px solid #fff;}
-.tab li:hover span {width:0;}
+.tab li.bg a {top:-1px; left:-1px;height:32px; padding:0 17px 0 16px; border-top:solid 3px #c81623; border-left:solid 1px #c81623; border-right:solid 1px #c81623; border-bottom:1px solid #fff;}
+.tab li.bg span {width:0;}
 /*tab选项卡内容*/
 .tabListWrap {position:relative; width:880px;float:left;}
-.tabList {position:absolute; right:0; top:0; width:880px; background:#fff;}
-
+.tabList {display:none;position:absolute; right:0; top:0; width:880px; background:#fff;}
+.tabListWrap .tabListBg {display:block;}
 /*tabList1第一种布局*/
 .tabList1 .tabList-left {float:left;width:660px;}
 .tabList1 li {float:left;border-right: 1px solid #EDEDED; border-bottom: 1px solid #EDEDED;}
 .tabList1 .fore1 {width:439px; height:157px;}
-.tabList1 .fore2 {width: 439px;height: 157px;padding-top: 316px;}
+.tabList1 .fore2 {width: 439px;height: 157px;padding-top: 316px; background:url("../images/yifu/jlunbo1.jpg") no-repeat left top;}
 .tabList1 .fore3 {margin-top:-157px;}
 .tabList1 .fore3,.tabList1 .fore4,.tabList1 .fore5,.tabList1 .fore6 {float:right; width:219px; height:157px; }
 .tabList1 li a {display: block; }
@@ -186,7 +333,7 @@
 /*tabList3第三种布局*/
 .floor2 .tabListWrap {width:1000px;}
 .tabList3 {width:1000px;}
-.tabList3 .tabCarousel {float:left;width:339px; height:473px; border-right: 1px solid #EDEDED; border-bottom: 1px solid #EDEDED;}
+.tabList3 .tabCarousel {float:left;width:339px; height:473px; border-right: 1px solid #EDEDED; border-bottom: 1px solid #EDEDED; background:url("../images/yifu/jlunbo2.jpg") no-repeat left top; }
 .tabList3 .tabList-left {float:left; width:660px; overflow:hidden;}
 .tabList3 li {float:left;width:219px;border-right: 1px solid #EDEDED; border-bottom: 1px solid #EDEDED;}
 /*tabList4第四种布局*/

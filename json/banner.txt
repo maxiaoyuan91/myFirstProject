@@ -1,0 +1,1 @@
+[{"img":"images/banner1.jpg","desc":"我是图片的描述信息"},{"img":"images/banner2.jpg","desc":"我是图片的描述信息"},{"img":"images/banner3.jpg","desc":"我是图片的描述信息"},{"img":"images/banner4.jpg","desc":"我是图片的描述信息"},{"img":"images/banner5.jpg","desc":"我是图片的描述信息"},{"img":"images/banner6.jpg","desc":"我是图片的描述信息"}]

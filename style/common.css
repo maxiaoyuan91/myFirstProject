@@ -14,13 +14,13 @@
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
 }
+
 .topNav-left {float:left;}
 .topNav-left li {position:relative;}
 .topNav-left a {padding:0 25px 0 10px;}
-.choseAdd {position:absolute; left:0; top:30px; z-index:1; display:none; width:312px; height:244px; background:#fff; border:1px solid #ccc;}
 .topNav-right {float:right;}
-.topNav-right li {float:left; height:30px;}
-.topNav-right li a {display: block; float:left; height:14px; line-height: 14px; padding:0 8px; border-right:1px solid #ddd; margin:8px 0 0 0;}
+.topNav-right>li {float:left; height:30px; position:relative;}
+.topNav-right>li>a {display: block; float:left; height:14px; line-height: 14px; padding:0 8px; border-right:1px solid #ddd; margin:8px 0 0 0;}
 .topNav-right li a.bor0 {border:0;}
 .topNav-right li a.red {color:#B61D1D;;}
 .topNav-right li a.myJD,.topNav-right li a.careJD,.topNav-right li a.serJD,.topNav-right li a.navJD {padding:0 25px 0 8px;}
@@ -28,6 +28,26 @@
 .topNav-right li a.appJD .iconWrap-left {top:-2px; left:7px; width:15px; height:20px; }
 .topNav-right li a.appJD:hover .iconWrap-left {background-position: 0 -25px;}
 .topNav-right li a:hover {color:#B61D1D;;}
+.topNav-menu {position:absolute; left:0; top:30px; z-index:100; display:none; background:#fff; border:1px solid #ccc;}
+.addMenu { width:312px; height:244px;}
+.addMenu a {display:block; float:left; width:38px; height:24px; text-align: center; line-height: 24px; margin:6px 10px 0; padding:0;}
+.addMenu a:hover {color:#C81623;}
+.addMenu a.bg {background:#c81623; color:#fff;}
+.myJDMenu {width:280px; height:296px;}
+.myJDMenu dl {padding:10px 0 0 15px;height:60px;}
+.myJDMenu dl dt {float:left;width:60px; height:100%; background:green; border-radius: 50%;}
+.myJDMenu dl dd {float:left;width:118px;height:100%; margin:0 0 0 10px;}
+.myJDMenu dl dd>a {font-size:14px; font-weight:bold;}
+.myJDMenu dl dd p a {display:inline-block;}
+.myJDMenu dl dd p a.first {padding-right:10px;}
+.myJDMenu dl dd p a.last {padding-left:10px;}
+.myJDMenu ul {padding:15px 0; border-bottom:1px dashed #ccc;}
+.myJDMenu ul li {float:left; width:110px; height:24px; line-height: 24px; padding:0 0 0 15px; }
+.myJDMenu .title {padding:15px 15px 10px 15px;}
+.myJDMenu .title h2 {float:left;width:60px; font-size:12px; font-weight:bold; color:#666;}
+.myJDMenu .title a {display:block; float:right; color:#666}
+.myJDMenu .mySee {padding-left:15px;}
+.myJDMenu .mySee a {display:block; float:left;}
 /*header*/
 .logo {display: block; float:left; width: 270px; height: 60px;background: url("../images/logo.png") no-repeat 0 0;text-indent: -20000px; margin:20px 0;}
 .search {float:left; padding:25px 0 0 95px ;}
@@ -46,9 +66,28 @@
 .nav-left {position:relative; float:left; width:210px;}
 .nav-left h2 { width: 190px; height:44px;padding: 0 10px; background:#b1191a; font: 400 15px/44px "microsoft yahei";  color: #fff;}
 .nav-left>ul {background:#c81623;}
-.menuWrap {position:absolute; left:0; top:46px;width:210px;}
+.menuWrap {position:absolute; left:0; top:46px;width:210px; /*height:466px;*/}
+/*.menu {position:relative;}*/
+.menuWrap>li:hover h3 {background:#f7f7f7;}
+.menuWrap>li:hover h3 a {color:#b1191a;}
 .menuWrap h3 {clear:both;height: 31px;}
 .menuWrap h3 a {display:block;float:left; height: 31px; padding: 0 10px;line-height: 31px;color:#fff; font-family: "microsoft yahei";font-size: 14px; font-weight: 400;}
+.navMenu {position:absolute; left:210px; top:0; z-index:20; display:none; width:999px; min-height:464px; border:1px solid #b61d1d; border-top:0; border-left:0; background:#f7f7f7;}
+.navMenu-left {float:left;}
+.special {padding:20px 0 5px 20px;}
+.special a {display:block; float:left; height:23px; line-height: 23px;  padding:0 0 0 5px; background:#7c7171; color:#fff; margin:0 0 0 10px;}
+.special a span {display:inline-block; width:23px; height:23px; background:#5c5251; text-align:center; line-height: 23px; color:#fff; margin:0 0 0 5px;}
+.special a:hover {background:#c81623;}
+.special a:hover span {background:#b1191a;}
+.menuClassfiy {padding:0 0 0 10px; clear:both;}
+.menuClassfiy dt {float:left;width:94px; height:36px; line-height:36px; text-align: center;}
+.menuClassfiy dd {float:left;width:622px; border-bottom:1px solid #eee;}
+.menuClassfiy dd a {display:block; float:left; height:14px; line-height: 14px; padding:0 7px; border-left:1px solid #eee; margin:11px 0;}
+.menuClassfiy dd a:hover {color:#c81623;}
+.navMenu-right {float:right; padding:20px 20px 0 0;}
+.navMenu-right ul {width:168px; margin-bottom:10px;}
+.navMenu-right ul li {float:left; width:83px; height:35px; margin-right:1px; margin-bottom:1px;}
+.navMenu-right>a {display:block; width:168px;height:134px; margin-bottom:1px;}
 .nav-right {float: left;}
 .nav-right li {float:left;}
 .nav-right li a {float:left;height: 44px;padding: 0 20px;text-align: center;font: 400 15px/44px "microsoft yahei";color: #333;}
@@ -75,3 +114,126 @@
 .copyright img {display:inline-block;}
 .authentication {width:678px; margin:0 auto;}
 .authentication a {display:inline-block;float:left;margin: 0 5px;}
+/*
+toolbar*/
+.toolbarWrap {
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9990;
+    width: 0;
+    height: 100%;}
+
+.toolbarIn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-right: 6px solid #7a6e6e;
+    -webkit-transition: right .3s ease-in-out 0s;
+    -moz-transition: right .3s ease-in-out 0s;
+    transition: right .3s ease-in-out 0s;
+}
+.toolbarIn>div {
+    position: absolute;
+    left: -29px;
+}
+.toolTop {
+    top: 50%;
+    width: 35px;
+    margin-top: -61px;
+}
+.toolFooter {
+    bottom: 20px;
+    width: 35px;
+
+}
+.tool {
+    display:block;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin-bottom: 1px;
+    cursor: pointer;
+    background-color: #7a6e6e;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+.tab-tip {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    width: 6px;
+    height: 6px;
+    background-position: -150px -150px;
+    z-index: 999;
+}
+.bgImg{
+    display: inline-block;
+    background-image: url(//static.360buyimg.com/devfe/toolbar/1.0.0/css/i/toolbars.png);
+    _background-image: url(//static.360buyimg.com/devfe/toolbar/1.0.0/css/i/toolbars-png8.png);
+    background-repeat: no-repeat;}
+
+.tab-ico{
+    width: 34px;
+    height: 35px;
+    margin-left: 1px;
+    position: relative;
+    z-index: 2;
+    background-color: #7a6e6e;
+}
+.tool1 .tab-ico {
+    background-position: -88px -175px;
+}
+.tool2 .tab-ico {
+    background-position: -50px -0px;
+}
+.tool3 .tab-ico {
+    background-position: -190px -100px;
+}
+.tool4 .tab-ico {
+    background-position: -50px -50px;
+}
+.tool5 .tab-ico {
+    background-position: -50px -100px;
+}
+.tool6 .tab-ico {
+    background-position: -190px -150px;
+}
+.tool7 .tab-ico {
+    background-position: -50px -150px;
+}
+.tool8 .tab-ico {
+    background-position: -50px -250px;
+}
+.tab-text {
+    width: 62px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    left: 35px;
+    top: 0;
+    background-color: #7a6e6e;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+    -webkit-transition: left .3s ease-in-out .1s;
+    -moz-transition: left .3s ease-in-out .1s;
+    transition: left .3s ease-in-out .1s;
+    _display: none;}
+
+.toolbarIn .tool:hover {background-color:#c81623;}
+.tool:hover .tab-text {
+    left: -60px;
+    background-color: #c81623;
+    _display: block
+}
+.tool:hover .tab-ico {
+    background-color: #c81623
+}

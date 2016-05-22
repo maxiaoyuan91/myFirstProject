@@ -42,24 +42,6 @@ var utils = (function () {
         document.body[attr] = value;
     }
 
-    //->getCss:获取元素的样式值
-    function getCss(curEle, attr) {
-        var val = null, reg = null;
-        if (flag) {
-            val = window.getComputedStyle(curEle, null)[attr];
-        } else {
-            if (attr === "opacity") {
-                val = curEle.currentStyle["filter"];
-                reg = /^alpha\(opacity=(\d+(?:\.\d+)?)\)$/;
-                val = reg.test(val) ? reg.exec(val)[1] / 100 : 1;
-            } else {
-                val = curEle.currentStyle[attr];
-            }
-        }
-        reg = /^(-?\d+(\.\d+)?)(px|pt|em|rem)?$/;
-        return reg.test(val) ? parseFloat(val) : val;
-    }
-
     //->children:获取所有的元素子节点
     function children(curEle, tagName) {
         var ary = [];
@@ -253,6 +235,68 @@ var utils = (function () {
         return ary;
     }
 
+    //->getCss:获取元素的样式值
+    function getCss(attr) {
+        var val = null, reg = null;
+        if (flag) {
+            val = window.getComputedStyle(this, null)[attr];
+        } else {
+            if (attr === "opacity") {
+                val = this.currentStyle["filter"];
+                reg = /^alpha\(opacity=(\d+(?:\.\d+)?)\)$/;
+                val = reg.test(val) ? reg.exec(val)[1] / 100 : 1;
+            } else {
+                val = this.currentStyle[attr];
+            }
+        }
+        reg = /^(-?\d+(\.\d+)?)(px|pt|em|rem)?$/;
+        return reg.test(val) ? parseFloat(val) : val;
+    }
+
+    //->setCss:给当前元素的某一个样式属性设置值(增加在行内样式上的)
+    function setCss(attr, value) {
+        if (attr === "float") {
+            this["style"]["cssFloat"] = value;
+            this["style"]["styleFloat"] = value;
+            return;
+        }
+        if (attr === "opacity") {
+            this["style"]["opacity"] = value;
+            this["style"]["filter"] = "alpha(opacity=" + value * 100 + ")";
+            return;
+        }
+        var reg = /^(width|height|top|bottom|left|right|((margin|padding)(Top|Bottom|Left|Right)?))$/;
+        if (reg.test(attr)) {
+            if (!isNaN(value)) {
+                value += "px";
+            }
+        }
+        this["style"][attr] = value;
+    }
+
+    //->setGroupCss:给当前元素批量的设置样式属性值
+    function setGroupCss(options) {
+        for (var key in options) {
+            if (options.hasOwnProperty(key)) {
+                setCss.call(this, key, options[key]);
+            }
+        }
+    }
+
+    //->css:此方法实现了获取、单独设置、批量设置元素的样式值
+    function css(curEle) {
+        var argTwo = arguments[1], ary = Array.prototype.slice.call(arguments, 1);
+        if (typeof argTwo === "string") {
+            if (typeof arguments[2] === "undefined") {
+                return getCss.apply(curEle, ary);
+            }
+            setCss.apply(curEle, ary);
+        }
+        argTwo = argTwo || 0;
+        if (argTwo.toString() === "[object Object]") {
+            setGroupCss.apply(curEle, ary);
+        }
+    }
 
     //->把外界需要使用的方法暴露给utils
     return {
@@ -260,7 +304,6 @@ var utils = (function () {
         offset: offset,
         listToArray: listToArray,
         formatJSON: formatJSON,
-        getCss: getCss,
         children: children,
         prev: prev,
         next: next,
@@ -278,6 +321,7 @@ var utils = (function () {
         hasClass: hasClass,
         addClass: addClass,
         removeClass: removeClass,
-        getElementsByClass: getElementsByClass
+        getElementsByClass: getElementsByClass,
+        css: css
     }
 })();
